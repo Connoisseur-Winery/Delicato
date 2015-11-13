@@ -25,8 +25,8 @@ import org.apache.http.message.BasicNameValuePair;
 @RequestMapping("/")
 public class WineController {
 	
-	public static final String ACCOUNT_SID = "ACcb63f40bbffb27bf7881adbce8f4640e";
-	public static final String AUTH_TOKEN = "f492864806c00465b41f999753b230c7";
+	public static final String ACCOUNT_SID = "";
+	public static final String AUTH_TOKEN = "";
 	Message message = null;
 
 		@RequestMapping(value = "/home", method = RequestMethod.GET)
