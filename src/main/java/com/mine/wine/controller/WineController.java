@@ -6,11 +6,13 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.mine.wine.model.Email;
+import com.mine.wine.model.User;
 import com.twilio.sdk.TwilioRestClient;
 import com.twilio.sdk.TwilioRestException;
 import com.twilio.sdk.resource.factory.MessageFactory;
@@ -33,21 +35,29 @@ public class WineController {
 			return "map";
 	 
 		}
-		@RequestMapping(value="/loadmap", method=RequestMethod.POST)
-		public String submitForm(ModelMap model) {	
-			return "map";
-		}
+		@RequestMapping(value="/bookatour", method=RequestMethod.POST)
+		public String register(User user, Model m) 
+		{
+			sendMail(user.getEmail(), user.getDate1());
+			
+
+			   return "index";
+		}	
+
 		
-		public void sendMail() {
+		public void sendMail(String email, String date) {
 			try{
 				ApplicationContext mailContext = 
 			            new ClassPathXmlApplicationContext("Spring-Mail.xml");
+				String[] day = date.split("00");
+				
+				String body = "Your tour is booked for "+ day[0];
 				
 				Email mm = (Email) mailContext.getBean("Email");
 				mm.sendMail("webui.cmpe280@gmail.com",
-						"webui.cmpe280@gmail.com",
-						   "Welcome!", 
-						   "You are successfully registered to Online Shoppe");
+						email,
+						   "Wine Tour Booked Successfully!", 
+						   body);
 			}catch(Exception e){
 				e.printStackTrace();
 			}
