@@ -1,0 +1,128 @@
+Category,Level1,Level2,Level3,Level4,Federal,,GovXFer,State,Local,Total
+wines,green veggies,white,light dry white,Sauvignon blanc,0.234,,,,,2
+wines,green veggies,white,light dry white,pinot grigio,0.454,,,,,4
+wines,green veggies,white,light dry white,albarino,0.138,,,,,6
+wines,green veggies,white,light dry white,gruner v,6.75,,,,,8
+wines,green veggies,white,Sparkling wine,champagne,2.34,,,,,10
+wines,green veggies,white,Sparkling wine,franciacorta,5.66,,,,,5
+wines,green veggies,white,Sparkling wine,cava,2.32,,,,,33
+wines,green veggies,white,Sparkling wine,prosecco,0,,,,,15
+wines,roasted veggies,white,light dry white,Sauvignon blanc,0.234,,,,,12
+wines,roasted veggies,white,light dry white,pinot grigio,0.454,,,,,14
+wines,roasted veggies,white,light dry white,albarino,0.138,,,,,16
+wines,roasted veggies,white,light dry white,gruner v,5,,,,,18
+wines,roasted veggies,white,rich white,chardonnay,5,,,,,20
+wines,roasted veggies,white,rich white,oaked whites,5,,,,,22
+wines,roasted veggies,white,rich white,viognier,5,,,,,23
+wines,roasted veggies,red,light red,pinot noir,5,,,,,25
+wines,roasted veggies,red,light red,grenache,5,,,,,26
+wines,roasted veggies,red,light red,pinotage,5,,,,,12
+wines,roasted veggies,red,light red,gamay,5,,,,,5
+wines,soft cheese,white,Sparkling wine,champagne,2.34,,,,,15
+wines,soft cheese,white,Sparkling wine,franciacorta,5.66,,,,,15
+wines,soft cheese,white,Sparkling wine,cava,2.32,,,,,33
+wines,soft cheese,white,Sparkling wine,prosecco,64,,,,,14
+wines,soft cheese,white,Sweet white,riesling,3.45,,,,,3.45
+wines,soft cheese,white,Sweet white,Chenin Blanc,4.56,,,,,4.56
+wines,soft cheese,white,Sweet white,Moscato,6.89,,,,,6.89
+wines,soft cheese,red,Dessert wine,Port and Tawny port,5.12,,,,,5.12
+wines,soft cheese,red,Dessert wine,Sherry,3.45,,,,,4.56
+wines,soft cheese,red,Dessert wine,Late harvest,9.98,,,,,9.98
+wines,soft cheese,red,Dessert wine,Tokaji,1.11,,,,,1.11
+wines,hard cheese,white,Sparkling wine,champagne,2.34,,,,,33
+wines,hard cheese,white,Sparkling wine,franciacorta,5.66,,,,,15
+wines,hard cheese,white,Sparkling wine,cava,2.32,,,,,33
+wines,hard cheese,white,Sparkling wine,prosecco,64,,,,,14
+wines,hard cheese,red,Medium red,Sangiovese,33,,,,,33
+wines,hard cheese,red,Medium red,Merlot,23,,,,,23
+wines,hard cheese,red,Medium red,Cab. Franc,13,,,,,13
+wines,hard cheese,red,Medium red,Tempranillo,3,,,,,3
+wines,hard cheese,red,Big red,Cabernet Sauvignon,5,,,,,5
+wines,hard cheese,red,Big red,Shiraz,10,,,,,10
+wines,hard cheese,red,Big red,Zinfandel,12,,,,,12
+wines,hard cheese,red,Big red,Mourvedre,14,,,,,14
+wines,hard cheese,red,Big red,Aglianico,19,,,,,19
+wines,carbs,white,Sweet white,riesling,3.45,,,,,3.45
+wines,carbs,white,Sweet white,Chenin Blanc,4.56,,,,,4.56
+wines,carbs,white,Sweet white,Moscato,6.89,,,,,6.89
+wines,carbs,white,Sparkling wine,champagne,2.34,,,,,2
+wines,carbs,white,Sparkling wine,franciacorta,5.66,,,,,15
+wines,carbs,white,Sparkling wine,cava,2.32,,,,,33
+wines,carbs,white,Sparkling wine,prosecco,64,,,,,14
+wines,carbs,white,rich white,chardonnay,5,,,,,5
+wines,carbs,white,rich white,oaked whites,5,,,,,5
+wines,carbs,white,rich white,viognier,5,,,,,5
+wines,carbs,white,light dry white,Sauvignon blanc,0.234,,,,,1
+wines,carbs,white,light dry white,pinot grigio,0.454,,,,,2
+wines,carbs,white,light dry white,albarino,0.138,,,,,1
+wines,carbs,white,light dry white,gruner v,6.75,,,,,2
+wines,carbs,red,light red,pinot noir,5,,,,,5
+wines,carbs,red,light red,grenache,5,,,,,5
+wines,carbs,red,light red,pinotage,5,,,,,5
+wines,carbs,red,light red,gamay,5,,,,,5
+wines,carbs,red,Medium red,Sangiovese,33,,,,,33
+wines,carbs,red,Medium red,Merlot,23,,,,,23
+wines,carbs,red,Medium red,Cab. Franc,13,,,,,13
+wines,carbs,red,Medium red,Tempranillo,3,,,,,3
+wines,carbs,red,Dessert wine,Port and Tawny port,5.12,,,,,5.12
+wines,carbs,red,Dessert wine,Sherry,3.45,,,,,4.56
+wines,carbs,red,Dessert wine,Late harvest,9.98,,,,,9.98
+wines,carbs,red,Dessert wine,Tokaji,1.11,,,,,1.11
+wines,Fish,white,light dry white,Sauvignon blanc,0.234,,,,,1
+wines,Fish,white,light dry white,pinot grigio,0.454,,,,,2
+wines,Fish,white,light dry white,albarino,0.138,,,,,1
+wines,Fish,white,light dry white,gruner v,6.75,,,,,2
+wines,Fish,white,Sparkling wine,champagne,2.34,,,,,1
+wines,Fish,white,Sparkling wine,franciacorta,5.66,,,,,15
+wines,Fish,white,Sparkling wine,cava,2.32,,,,,33
+wines,Fish,white,Sparkling wine,prosecco,64,,,,,14
+wines,Rich Fish,white,rich white,chardonnay,5,,,,,5
+wines,Rich Fish,white,rich white,oaked whites,5,,,,,5
+wines,Rich Fish,white,rich white,viognier,5,,,,,5
+wines,Rich Fish,red,light red,pinot noir,5,,,,,5
+wines,Rich Fish,red,light red,grenache,5,,,,,5
+wines,Rich Fish,red,light red,pinotage,5,,,,,5
+wines,Rich Fish,red,light red,gamay,5,,,,,5
+wines,White Meat,white,rich white,chardonnay,5,,,,,5
+wines,White Meat,white,rich white,oaked whites,5,,,,,5
+wines,White Meat,white,rich white,viognier,5,,,,,5
+wines,White Meat,red,light red,pinot noir,5,,,,,5
+wines,White Meat,red,light red,grenache,5,,,,,5
+wines,White Meat,red,light red,pinotage,5,,,,,5
+wines,White Meat,red,light red,gamay,5,,,,,5
+wines,White Meat,red,Medium red,Sangiovese,33,,,,,33
+wines,White Meat,red,Medium red,Merlot,23,,,,,23
+wines,White Meat,red,Medium red,Cab. Franc,13,,,,,13
+wines,White Meat,red,Medium red,Tempranillo,3,,,,,3
+wines,Red Meat,red,Medium red,Sangiovese,33,,,,,33
+wines,Red Meat,red,Medium red,Merlot,23,,,,,23
+wines,Red Meat,red,Medium red,Cab. Franc,13,,,,,13
+wines,Red Meat,red,Medium red,Tempranillo,3,,,,,3
+wines,Red Meat,red,Big red,Cabernet Sauvignon,5,,,,,5
+wines,Red Meat,red,Big red,Shiraz,10,,,,,10
+wines,Red Meat,red,Big red,Zinfandel,12,,,,,12
+wines,Red Meat,red,Big red,Mourvedre,14,,,,,14
+wines,Red Meat,red,Big red,Aglianico,19,,,,,19
+wines,Cured and Smoked Meat,red,Medium red,Sangiovese,33,,,,,33
+wines,Cured and Smoked Meat,red,Medium red,Merlot,23,,,,,23
+wines,Cured and Smoked Meat,red,Medium red,Cab. Franc,13,,,,,13
+wines,Cured and Smoked Meat,red,Medium red,Tempranillo,3,,,,,3
+wines,Cured and Smoked Meat,red,Big red,Cabernet Sauvignon,5,,,,,5
+wines,Cured and Smoked Meat,red,Big red,Shiraz,10,,,,,10
+wines,Cured and Smoked Meat,red,Big red,Zinfandel,12,,,,,12
+wines,Cured and Smoked Meat,red,Big red,Mourvedre,14,,,,,14
+wines,Cured and Smoked Meat,red,Big red,Aglianico,19,,,,,19
+wines,Cured and Smoked Meat,red,Dessert wine,Port and Tawny port,5.12,,,,,5.12
+wines,Cured and Smoked Meat,red,Dessert wine,Sherry,3.45,,,,,4.56
+wines,Cured and Smoked Meat,red,Dessert wine,Late harvest,9.98,,,,,9.98
+wines,Cured and Smoked Meat,red,Dessert wine,Tokaji,1.11,,,,,1.11
+wines,Cured and Smoked Meat,white,Sweet white,riesling,3.45,,,,,3.45
+wines,Cured and Smoked Meat,white,Sweet white,Chenin Blanc,4.56,,,,,4.56
+wines,Cured and Smoked Meat,white,Sweet white,Moscato,6.89,,,,,6.89
+wines,Dessert,red,Dessert wine,Port and Tawny port,5.12,,,,,5.12
+wines,Dessert,red,Dessert wine,Sherry,3.45,,,,,4.56
+wines,Dessert,red,Dessert wine,Late harvest,9.98,,,,,9.98
+wines,Dessert,red,Dessert wine,Tokaji,1.11,,,,,1.11
+wines,Dessert,white,Sweet white,riesling,3.45,,,,,3.45
+wines,Dessert,white,Sweet white,Chenin Blanc,4.56,,,,,4.56
+wines,Dessert,white,Sweet white,Moscato,6.89,,,,,6.89

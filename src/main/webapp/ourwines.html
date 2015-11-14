@@ -1,148 +1,58 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style type="text/css">
-  
-	.node {
-    cursor: pointer;
-  }
-
-  .overlay{
-      background-color:#E0EBEB;
-  }
-   
-  .node circle {
-    fill: #ffc2b3;
-    stroke: #ffc2b3;
-    stroke-width: 1.5px;
-  }
-   
-  .node text {
-    font-size:17px; 
-    font-family:corbel;
-  }
-   
-  .link {
-    fill: none;
-    stroke: #BBD2FF;
-    stroke-width: 1.5px;
-  }
-
-  .templink {
-    fill: red;
-    stroke: red;
-    stroke-width: 3px;
-  }
-
-  .ghostCircle.show{
-      display:block;
-  }
-
-  .ghostCircle, .activeDrag .ghostCircle{
-       display: none;
-  }
-
-</style>
-<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="resources/js/dndTree.js"></script>
-
 <head>
+    <meta HTTP-EQUIV="X-UA-COMPATIBLE" CONTENT="IE=EmulateIE9">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta property="og:image" content="http://www.brightpointinc.com/interactive/images/Budget_202px.png">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>Wine Pairing data visualization D3.js</title>
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css">
 
-    <title>Wine Connoisseur</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="resources/css/agency.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
+    <script type="text/javascript" src="resources/js/d3.min.js"></script>
+    <script type="text/javascript" src="resources/js/main.js"></script>
 
 </head>
-<body>
 
- <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:black">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="http://localhost:8080/connoisseur">Wine Connoisseur</a>
-            </div>
+<body style="height:900px; width:1280px; overflow:auto" onload="main()">
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#events">Events</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseurindex.html">Our Wines</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#contact">Contact</a>
-                    </li>
-                </ul>
+
+<div class="bp-navBar" style="left:20px;">
+    <ul class="bp-navigation clearfix" style="list-style-type:none">
+        <li id="federalButton" class="button selected">Total</li>
+        <li id="stateButton" class="button">Reds</li>
+        <li id="localButton" class="button">Whites</li>
+    </ul>
+</div>
+
+
+
+<div id="body" style="position: absolute; top:80px">
+
+    <div id="toolTip" class="tooltip" style="opacity:0;">
+        <div id="head" class="header"></div>
+        <div id="header1" class="header1"></div>
+        <div id="header2" class="header2"></div>
+        <div style="position:absolute; left:10px">
+            <div id="federalTip" class="tip" style="width:135px; left:0px; top:10px; position: absolute;">
+                <div class="header3"><br>Total</div>
+                <div class="header-rule"></div>
+                <div id="fedSpend" class="header4"></div>
             </div>
-            <!-- /.navbar-collapse -->
+            <div id="stateTip" class="tip" style="width:125px; left:140px; top:10px; position: absolute;">
+                <div class="header3"><br>Whites</div>
+                <div class="header-rule"></div>
+                <div id="stateSpend" class="header4"></div>
+            </div>
+            <div id="localTip" class="tip" style="width:125px; left:272px; top:10px; position: absolute;">
+                <div class="header3"><br>Reds</div>
+                <div class="header-rule"></div>
+                <div id="localSpend" class="header4"></div>
+            </div>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <div id="tree-container"></div>
-    
-        <!-- jQuery -->
-    <script src="resources/js/jquery.js"></script>
+        <div class="tooltipTail"></div>
+    </div>
+</div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="resources/js/bootstrap.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="resources/js/classie.js"></script>
-    <script src="resources/js/cbpAnimatedHeader.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="resources/js/jqBootstrapValidation.js"></script>
-    <script src="resources/js/contact_me.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="resources/js/agency.js"></script>
-    
 </body>
+
 </html>

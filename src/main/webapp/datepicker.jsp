@@ -57,7 +57,7 @@
                         <a class="page-scroll" href="http://localhost:8080/connoisseur#events">Events</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseurindex.html">Our Wines</a>
+                        <a class="page-scroll" href="http://localhost:8080/connoisseur/index.html">Our Wines</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="http://localhost:8080/connoisseur#team">Team</a>

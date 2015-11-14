@@ -30,7 +30,6 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
 
 </head>
 
@@ -57,16 +56,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">View Map</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">Vizualize</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#events">Events</a>
                     </li>
+                     <li>
+                        <a class="page-scroll" href="#portfolio">Photo Gallery</a>
+                    </li>
+                     <li>
+                     <a class="page-scroll" href="ourwines.html">Our Wines</a>
+                    </li>
                     <li>
-                        <a class="page-scroll" href="ourwines.html">Our Wines</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
@@ -82,15 +87,17 @@
     </nav>
 
     <!-- Header -->
-    <header>
+ <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                 <video width="100%" controls>
+                     <source type="video/mp4" src="http://svs.gsfc.nasa.gov//vis/a010000/a011700/a011776/21st_Century_Drought_final_ipod_lg.m4v">
+                     Your browser does not support HTML5 video.
+                  </video>
             </div>
         </div>
-    </header>
+    </header> 
+    
 
     <!-- Services Section -->
     <section id="services">
@@ -132,14 +139,14 @@
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
-        <div class="container">
+       <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Portfolio</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
-            <div class="row">
+       <!--      <div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -223,9 +230,67 @@
                         <h4>Dreams</h4>
                         <p class="text-muted">Website Design</p>
                     </div>
-                </div>
-            </div>
+                </div> 
+            </div>-->
+            <div id="myCarousel" class="carousel slide">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="resources/img/1.png" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Big Data</h1>
+          <p></p>
+         <p><a class="btn btn-lg btn-primary" href="BigDataPage.html">Learn More</a>
+        </p>
         </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="resources/img/2.png" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>IoT/IoE</h1>
+          <!-- <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p> -->
+          <p><a class="btn btn-large btn-primary" href="IOTPage.html">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="resources/img/3.png" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Mobile</h1>
+          <!-- <p>With "mobile-first" there is now only one percentage-based grid.</p> -->
+          <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <img src="resources/img/4.png" style="width:100%" class="img-responsive">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>IoT/IoE</h1>
+          <!-- <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have completely changed.</p> -->
+          <p><a class="btn btn-large btn-primary" href="IOTPage.html">Learn more</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="icon-prev"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="icon-next"></span>
+  </a>  
+</div>
+        </div> 
     </section>
 
     <!-- events Section -->
@@ -668,7 +733,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="resources/js/agency.js"></script>
-    
+
 </body>
 
 </html>
