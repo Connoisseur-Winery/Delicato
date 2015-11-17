@@ -59,7 +59,7 @@
                         <a class="page-scroll" href="#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseurSur#events">Events</a>
+                        <a class="page-scroll" href="#events">Best Sellers</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#">Our Wines</a>
@@ -95,6 +95,13 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="resources/js/agency.js"></script>
+    
+    
+    <script> 
+    $(function(){
+      $("#Bestsellers").load("index.html"); 
+    });
+    </script> 
 
 
 
@@ -186,8 +193,19 @@
             
  </div>
  </section>           
-
-
+    
+    
+    <section id="events">
+    	
+        <div class="container">
+            <div class="row">
+                 <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Best Sellers</h2>
+                    <div id = "Bestsellers" style="float:right;" ></div>
+                 </div>
+            </div>
+         </div>
+     </section>
 
 </body>
 
