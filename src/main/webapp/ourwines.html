@@ -42,7 +42,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="http://localhost:8080/connoisseur">Wine Connoisseur</a>
+                <a class="navbar-brand page-scroll" href="http://localhost:8080/connoisseurSur">Wine Connoisseur</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,14 +96,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="resources/js/agency.js"></script>
     
-    
-    <script> 
-    $(function(){
-      $("#Bestsellers").load("index.html"); 
-    });
-    </script> 
-
-
 
 
 <!-- Services Section -->
@@ -111,7 +103,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Wine and Dine</h2>
+                    <h1 class="section-heading">Wine and Dine</h1>
                     <h3 class="section-subheading text-muted">Add wine and make your meals magical.</h3>
                 </div>
             </div>
@@ -128,7 +120,7 @@
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
+                    </span><br><br><br>
                     <h4 class="service-heading">Join our tasting rooms</h4>
                     <p class="text-muted">So you think that you have found the one? Let us show you the world of choices Delicato has to offer.</p>
                 </div>
@@ -141,8 +133,38 @@
                     <p class="text-muted">Love you wines? Let us organize that dream wedding or that most awaited birthday, with a custom wine theme! Our wineyards offer the the most scenic locations for that special occasion. </p>
                 </div>
             </div>
+            <br>
+  <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3/d3.min.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/d3-transform/src/d3-transform.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/extarray.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/misc.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/cafej/src/micro-observer.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/microplugin/src/microplugin.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/bubble-chart.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
+  <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
+  <script src="test-bubble-chart.js"></script>
+  <style>
+    .bubbleChart {
+      min-width: 100px;
+      max-width: 700px;
+      height: 500px;
+      margin: 0 auto;
+    }
+    .bubbleChart svg{
+      background: #FFFFFF;
+    }
+  </style>
+</head>
+
+<div class="bubbleChart"/>
+           
         </div>
     </section>
+    
+    
+     
     
    <!-- The main stuff about wine pairing --> 
     <section id="services">
@@ -192,10 +214,17 @@
 	</div>
             
  </div>
- </section>           
-    
-    
-    <section id="events">
+ </section> 
+ 
+    <script> 
+    $(function(){
+      $("#Bestsellers").load("index.html"); 
+    });
+    </script>  
+  
+ 
+     <!-- Section for dynamic graphs -->
+ <section id="events">
     	
         <div class="container">
             <div class="row">
@@ -204,8 +233,15 @@
                     <div id = "Bestsellers" style="float:right;" ></div>
                  </div>
             </div>
+            
+            
          </div>
-     </section>
+     </section> 
+ 
+   
+    
+    
+    
 
 </body>
 
