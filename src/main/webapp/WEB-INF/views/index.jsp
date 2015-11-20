@@ -81,7 +81,10 @@
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#">Visualize</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}/login">Visualize</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}/register">Visualize</a>
                     </li>
                 </ul>
             </div>
@@ -852,7 +855,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; mine&wine 2015</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
