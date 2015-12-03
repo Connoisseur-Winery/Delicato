@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,28 +60,31 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">View Map</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Vizualize</a>
+                        <a class="page-scroll" href="#portfolio">Photo Gallery</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#events">Events</a>
                     </li>
                      <li>
-                        <a class="page-scroll" href="#portfolio">Photo Gallery</a>
-                    </li>
-                     <li>
-                     <a class="page-scroll" href="ourwines.html">Our Wines</a>
+                     <a class="page-scroll" href="ourwines.jsp">Our Wines</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                     <a class="page-scroll" href="${pageContext.request.contextPath}/onlineshop">Online Shoppe</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#team">Team</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}/login">Visualize</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}/register">Visualize</a>
                     </li>
                 </ul>
             </div>
@@ -850,7 +855,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                    <span class="copyright">Copyright &copy; mine&wine 2015</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">

@@ -38,32 +38,31 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="http://localhost:8080/connoisseur">Wine Connoisseur</a>
+                <a class="navbar-brand page-scroll" href="${pageContext.request.contextPath}">Wine Connoisseur</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#services">Services</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}#services">Services</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#events">Events</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}#events">Events</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur/index.html">Our Wines</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}/datepicker.jsp">Our Wines</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#team">Team</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}#team">Team</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="http://localhost:8080/connoisseur#contact">Contact</a>
+                        <a class="page-scroll" href="${pageContext.request.contextPath}#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -74,6 +73,7 @@
   	<div class="container">
       <br/> <br/> <br/> <br/> <br/> <br/>
       <h2>Select a date for your visit!</h2>
+      
     </div>
     <section id="contact">
         <div class="container">
@@ -81,6 +81,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <form:form action="/bookatour" method="post" modelAttribute="user" name="tour">
+                    <h4>${message}</h4>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
