@@ -13,15 +13,12 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Cabernet Sauvignon", count: "236"},
-        {text: "Champagne", count: "382"},
-        {text: "Shiraz", count: "170"},
-        {text: "pinot grigio", count: "123"},
-        {text: "Riesling", count: "12"},
-        {text: "Zinfandel", count: "170"},
-        {text: "Moscato", count: "382"},
-        {text: "Gruner v", count: "10"},
-        {text: "Chenin Blanc", count: "170"},
+              {text: "Steps today", count: "7321"},
+              {text: "Sleep", count: "5.5"},
+              {text: "Photos", count: "4"},
+              {text: "steps this week", count: "20000"},
+              {text: "Pandora stns synced", count: "5"},
+
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
@@ -30,7 +27,7 @@ $(document).ready(function () {
       {
         name: "central-click",
         options: {
-          text: "(Tasting room members)",
+          text: "(from Pi synchub)",
           style: {
             "font-size": "12px",
             "font-style": "italic",
